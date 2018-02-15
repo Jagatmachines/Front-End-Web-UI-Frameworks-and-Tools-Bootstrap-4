@@ -20,4 +20,28 @@ $(document).ready(function() {
             $('#carousel-button').children('span').removeClass('fa-play').addClass('fa-pause');
         }
     });
+
+    $('#login').click(function() {
+        $('#loginModal').modal('show');
+    });
+
+    $('#crossBtn').click(function() {
+        $('#loginModal').modal('hide');
+    });
+
+    $('#cancelLogin').click(function() {
+        $('#loginModal').modal('hide');
+    });
+
+    $('#reserveModal').click(function() {
+        $('#reserveTable').modal('show');
+    });
+
+    $('#reserveCancelBtn').click(function() {
+        $('#reserveTable').modal('hide');
+    });
+
+    $('#cancelReserve').click(function() {
+        $('#reserveTable').modal('hide');
+    });
 });
